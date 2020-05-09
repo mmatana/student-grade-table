@@ -1,0 +1,16 @@
+body {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif';
+}
+
+h1 {
+  padding: 20px 0px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif';
+}
+
+.table, th, tr, td {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif';
+}
+
+th {
+  background-color: lightgray;
+}
