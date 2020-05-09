@@ -1,5 +1,14 @@
 class App {
-  constructor() {
+  constructor(gradeTable) {
+    this.handleGetGradesSuccess = this.handleGetGradesSuccess.bind(this);
+    this.handleGetGradesError + this.handleGetGradesError.bind(this);
+    this.gradeTable = gradeTable;
+  }
+  handleGetGradesError(error) {
+    console.error(error);
+  }
+  handleGetGradesSuccess(grades) {
+    this.gradeTable.updateGrades(grades);
   }
   getGrades() {
     $.ajax(
@@ -8,9 +17,10 @@ class App {
         type: "GET",
         dataType: "json",
         headers: {
-          "X-Access-Token": "ikgaB9CQ"
+          "X-Access-Token": "ItBpCTx1"
         },
-
+        success: grades => this.handleGetGradesSuccess(grades),
+        error: error => this.handleGetGradesError(error)
       }
     );
   }
