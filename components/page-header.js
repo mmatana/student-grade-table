@@ -3,6 +3,6 @@ class PageHeader {
   this.headerElement = headerElement;
   }
   updateAverage(newAverage){
-    this.headerElement.querySelector("span").append(newAverage);
+    this.headerElement.querySelector("#grade").append(newAverage);
   }
 }
