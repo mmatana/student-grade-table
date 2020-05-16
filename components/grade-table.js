@@ -5,7 +5,7 @@ class GradeTable{
   updateGrades(grades) {
     var tBody = this.tableElement.querySelector("tbody");
 
-    for (var i = 0; i < grades.length; i++) {
+    for (var i = 0; i < grades.length; i++ ) {
       var tRow = document.createElement('tr');
       var tDataName = document.createElement('td');
       var tDataCourse = document.createElement('td');
